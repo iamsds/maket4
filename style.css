@@ -1,0 +1,265 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: var(white);
+}
+/* start header */
+.header{
+	height: 650px;
+	min-height: 100vh;
+	background: url(watch.jpg) no-repeat;
+	background-position: bottom right -330px;
+	background-size: 88vh;
+	border-bottom: 1px solid gray;
+}
+.header .row{
+	margin: 0 auto;
+	width: 1200px;
+	height: 800px;
+}
+.header .row .menu{
+	height: 100px;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: norow;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.header .row .menu .mleft i{
+	font-size: 40px;
+	color: #433F3E;
+	margin-left: 20px;
+}
+.header .row .menu .mright{
+	width: 450px;
+	margin-right: 40px;
+
+}
+.header .row .menu .mright ul{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	list-style: none;
+}
+.header .row .menu .mright ul li a{
+	padding-bottom: 12px;
+	font-family: "Roboto";
+	font-weight: 550;
+	font-size: 17px;
+	color: #666160;
+	text-decoration: none;
+	transition: all .2s;
+}
+.header .row .menu .mright ul li:hover a{
+	color: black;
+	border-bottom: 3px solid #565150;
+
+}
+.header .slayd{
+    margin-left: 20px;
+    margin-top: 150px;
+}
+.header .slayd h1{
+	color: #2A2A2A;
+	font-size: 45px;
+	font-family: "Roboto";
+	font-weight: bold;
+}
+.header .slayd p{
+	width: 450px;
+	font-family: "Roboto";
+    border-left: 3px solid gray;
+    padding-left: 1.5rem;
+    line-height: 1.5rem;
+    color: gray;
+    margin: 3rem 0 4rem 0;
+}
+.header .slayd  a{
+	color: #fff;
+	text-decoration: none;
+	font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+    background: #ea625c;
+    padding: 1rem 1.7rem;
+    transition: .15s;
+}
+.header .slayd  a:hover{
+	background: #cc5c57;
+}
+/* end header */
+.about{
+	margin: 0 auto;
+}
+.about .boxes{
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about .boxes .box{
+	width: 325px;
+	height: 300px;
+	margin-top: 60px;
+}
+.about .boxes .box strong{
+	font-family: "Roboto";
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #2a2a2a;
+}
+.about .boxes .box p{
+	font-family: "Roboto";
+	color: #2a2a2a;
+	margin: 2.2rem 0 1rem 0;
+    line-height: 1.7rem;
+}
+.about .boxes .box i{
+	font-size: 20px;
+	margin-left: 10px;
+	color: gray;
+}
+.about .boxes .box a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Roboto";
+    font-weight: 700;
+    font-size: .85rem;
+    color: #ea625c;
+    position: relative;
+    padding-left: 2.95rem;
+    transition: .15s;
+}
+.about .boxes .box a::before{
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 2.1rem;
+    height: 2px;
+    background: #ea625c;
+    transition: .15s;
+}
+.about .boxes .box a:hover{
+    padding-left: 3.8rem;
+    color: red;
+}
+.about .boxes .box a:hover::before{
+	content: '';
+    position: absolute;
+    left: ;
+    top: 45%;
+    width: 2.5rem;
+    height: 2px;
+    background: red;
+    transition: .15s;
+}
+.about .magazin{
+	width: 1160px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.about .magazin .mleft{
+	width: 580px;
+}
+.about .magazin .mright{
+	width: 580px;
+}
+.about .magazin h1{
+	margin-top: 150px;
+	font-family: "Roboto";
+	font-size: 2.6rem;
+    color: #2a2a2a;
+}
+.about .magazin p{
+	width: 450px;
+	font-family: "Roboto";
+	padding-left: 2rem;
+    border-left: 3px solid gray;
+    line-height: 1.5rem;
+    color: gray;
+    margin: 3rem 0 3rem 0;
+}
+.about .magazin a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	font-family: "Roboto";
+    font-weight: 500;
+    background: #EA625C;
+    padding: 1rem 1.7rem;
+    transition: .15s;
+}
+.about .magazin a:hover{
+	background: #cc5c57;
+}
+.about .magazin .mright img{
+	margin-top: 50px;
+	margin-left: 125px;
+	width: 457px;
+	height: 650px;
+}
+.end{
+	margin-top: 100px;
+    height: 100vh;
+    position: relative;
+	background: url(runners.jpg) no-repeat center;
+	background-size: cover;
+	display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+}
+.end .opacity{
+	position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 2;
+}
+.end .row{
+	margin-right: 90px;
+	z-index: 1;
+}
+.end .row .box{
+	width: 510px;
+}
+.end .row .box h1{
+	width: 400px;
+	font-size: 2.6rem;
+	font-family: "Roboto";
+	font-weight: 700;
+	color: #fff;
+}
+.end .row .box p{
+	padding-left: 2rem;
+	font-family: "Roboto";
+	font-size: 18px;
+    border-left: 4px solid white;
+    line-height: 1.5rem;
+    color: white;
+    margin: 3rem 0 4rem 0;
+}
+.end .row .box a{
+	text-decoration: none;
+	font-family: "Roboto";
+	color: #fff;
+    font-weight: 700;
+    background: #ea625c;
+    text-transform: uppercase;
+    padding: 1rem 1.7rem;
+    transition: .15s;
+}
+.end .row .box a:hover{
+	background: #cc5c57;
+}

@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background: #1a1a59;
+}
+.main{
+	width: 250px;
+	margin: 0 auto;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+}
+.main .rasm{
+	height: 150px;
+	background: url(food.jpg);
+	background-size: 250px;
+}
+.main .rasm h1{
+	margin-top: 80px;
+	margin-left: 20px;
+	color: white;
+}
+.main .rasm i{
+	margin-left: 20px;
+	color: white;
+	float: left;
+	font-size: 14px;
+}
+.main .rasm h4{
+	float: left;
+	margin-left: 8px;
+	color: white;
+	font-size: 14px;
+}
+.main .box{
+	height: 45px;
+	border-bottom: 1px solid dimgray;
+	display: flex;
+	background: wheat;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+.main .box h3{
+	font-size: 20px;
+	margin-left: 20px;
+	color: dimgray;
+	transition: all 1s;
+}
+.main .box small{
+	font-size: 16px;
+	margin-top: 2px;
+	margin-right: 15px;
+	color: dimgray;
+}
+.main .box:hover h3{
+	font-size: 22px;
+}
